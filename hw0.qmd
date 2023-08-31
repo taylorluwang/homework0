@@ -9,7 +9,7 @@ execute:
 
 This report calculates the solutions to the quadratic equation ax\^2 + bx + c = 0 for given values of a, b, and c.
 
-The plot below plots the quadratic equation, along with a line at y = 0 so that we can visualize the solutions.
+The plot below displays the quadratic equation, along with a line at y = 0 so that we can visualize the solutions.
 
 ```{r}
 solve_formula <- function(a, b, c){
@@ -27,7 +27,7 @@ solve_formula <- function(a, b, c){
       }
     
     x <- seq(-3, 3, length = 300)
-    plot(x, a*x^2 + b*x + c, type = "l")
+    plot(x, a*x^2 + b*x + c, type = "l", main = "Plot of: ax^2 + bx + c = 0", ylab = "F(x)")
     abline(h = 0, lty = 2)
   }
 }
